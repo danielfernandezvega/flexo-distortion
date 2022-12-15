@@ -14,23 +14,6 @@
 
         gtag('config', 'G-PVQVE827FQ');
     </script>
-    <!-- Hotjar Tracking Code for https://danielfernandezvega.github.io -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 3159229,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
     <!-- Open Graph Meta tags -->
     <meta property="og:title" content="Daniel Fernández Vega" />
     <meta property="og:description" content="Daniel Fernández Vega: Prepress and Packaging consulting" />
@@ -65,11 +48,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-primary bg-opacity-10 fw-lighter" style="font-family: 'Ubuntu', sans-serif; font-size: 1.3rem; font-weight: lighter;" onload="definirUnidades()">
+<body class="bg-primary bg-opacity-10 fw-lighter" style="font-family: 'Ubuntu', sans-serif; font-weight: lighter;" onload="definirUnidades()">
+    
     <div class="container shadow-sm bg-white p-3 mt-3 border border-5 border-dark border-opacity-100 border-start-0 border-top-0" style="width: 350px;">
-        <p class="text-center">Calculadora de distorsión Flexo</p>
+        <h3 class="text-center">Calculadora de distorsión Flexo <a class="text-light text-decoration-none" target="_blank" href="https://gitlab.com/danielfernandezvega/flexo-distortion.git"><span style="font-size: 10px;" class="badge bg-dark m-0 align-top"><i class="fab fa-gitlab"></i> Source</span></a></h3>
         <hr>
-        <p style="font-size: 10pt;">Esta calculadora pretende proveer al usuario de una herramienta de cálculo de distorsión flexográfico basado en los datos incorporados.</p>
+        <p style="font-size: 10pt;" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Esta calculadora pretende proveer al usuario de una herramienta de cálculo de distorsión flexográfico basado en los datos incorporados.</p>
         <hr>
         <label style="font-size: 8pt" for="unidades" class="form-label">Unidades:</label>
         <select onchange="definirUnidades()" id="unidades" class="form-select" aria-label="Default select Milímetros">
